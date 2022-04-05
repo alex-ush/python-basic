@@ -7,10 +7,7 @@ while add_next != 'no':
     new_number = int(input('Какое число вы хотите добить в список? '))
 
     for number in list_5:
-        if new_number == 1:
-            list_5.append(new_number)
-            break
-        elif new_number <= number:
+        if new_number <= number:
             index += 1
         else:
             list_5.insert(index, new_number)
